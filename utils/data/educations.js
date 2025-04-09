@@ -2,19 +2,20 @@ export const educations = [
   {
     id: 1,
     title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    duration: "2022 - Present",
+    institution: "Multimedia University of Kenya",
+    description: "Pursuing a degree in Computer Science with a focus on software development and data science."
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
+    title: "AI Career Essentials",
+    duration: "May 2024 - July 2024",
+    institution: "ALX AiCE",
   },
   {
     id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "Artificial Intelligence Fundamentals",
+    duration: "July 2024 - September 2024",
+    institution: "IBM Skills Build",
   }
 ]
