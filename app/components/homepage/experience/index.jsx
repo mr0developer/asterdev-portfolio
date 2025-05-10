@@ -4,7 +4,7 @@ import { experiences } from "@/utils/data/experience";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
-import AnimationLottie from "../../helper/animation-lottie";
+import ClientAnimationLottie from "../../helper/client-animation-lottie";
 import ClientGlowCard from "../../helper/client-glow-card";
 
 function Experience() {
@@ -32,7 +32,7 @@ function Experience() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
             <div className="w-full h-full">
-              <AnimationLottie animationPath={experience} />
+              <ClientAnimationLottie animationPath={experience} />
             </div>
           </div>
 
