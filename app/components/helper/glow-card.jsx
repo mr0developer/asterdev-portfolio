@@ -4,9 +4,6 @@ import { useEffect } from 'react';
 
 const GlowCard = ({ children, identifier }) => {
   useEffect(() => {
-    // Only run on client side
-    if (typeof document === 'undefined') return;
-
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
 
@@ -66,18 +63,12 @@ const GlowCard = ({ children, identifier }) => {
       );
     };
 
-    // Only add event listener if we're in the browser
-    if (typeof window !== 'undefined') {
-      document.body.addEventListener('pointermove', UPDATE);
-      RESTYLE();
-      UPDATE();
-    }
+    document.body.addEventListener('pointermove', UPDATE);
+    RESTYLE();
+    UPDATE();
 
-    // Cleanup event listener
     return () => {
-      if (typeof window !== 'undefined') {
-        document.body.removeEventListener('pointermove', UPDATE);
-      }
+      document.body.removeEventListener('pointermove', UPDATE);
     };
   }, [identifier]);
 
