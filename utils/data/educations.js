@@ -17,5 +17,11 @@ export const educations = [
     title: "Artificial Intelligence Fundamentals",
     duration: "July 2024 - September 2024",
     institution: "IBM Skills Build",
+  },
+  {
+    id: 4,
+    title: "Software Development Fundamentals",
+    duration: "January 2024 - May 2024",
+    institution: "PLP Academy",
   }
 ]
